@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  backend:
+      container_name: backend
+      image: 'dawa_ws_image:latest'
+      restart: always
+      ports:
+        - '5000:5000'
+      networks:
+        - web
+      volumes:
+        - c:/JCCR/data/LOGS/dawa_ws:/app/dawa/src/utils/general/LOGS
+
+  frontend:
+      container_name: frontend
+      image: 'node:latest'
+      working_dir: /app
+      volumes:
+        - D:\VSCode\front_taller_u3s11:/app
+      ports:
+        - '3000:3000'
+      networks:
+        - web
+      command: npm start
+      tty: true
+
+networks:
+  web:
+    driver: bridge
