@@ -11,7 +11,7 @@ class PublicacionesComponent:
             result = False
             data = None
             message = None
-            sql = "SELECT * FROM public.Posts sss"
+            sql = "SELECT * FROM public.Posts"
 
             result_publicaciones = DataBaseHandle.getRecords(sql, 0)
             if result_publicaciones['result']:
