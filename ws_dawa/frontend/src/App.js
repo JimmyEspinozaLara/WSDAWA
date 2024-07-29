@@ -1,18 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
-import Register from './components/register';
+import Register from './components/Register';
 import Posts from './components/Posts';
 
 function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
-          <Route path="/posts" component={Posts} />
-        </Switch>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/posts" element={<Posts />} />
+        </Routes>
       </div>
     </Router>
   );
