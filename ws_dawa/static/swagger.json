@@ -161,6 +161,15 @@
         "produces": [
           "application/json"
         ],
+        "parameters": [
+        {
+          "in": "header",
+          "name": "tokenapp",
+          "description": "Token para aplicación",
+          "required": true,
+          "type": "string"
+        }
+      ],
         "responses": {
           "200": {
             "description": "Operación exitosa",
