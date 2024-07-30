@@ -46,8 +46,8 @@ const Home = () => {
   };
 
   const handleCerrarSesion = () => {
-    console.log('Cerrar sesión'); //LOG PARA CERRAR SESIÓN
-    navigate('/login'); //redireccionar al login
+    console.log('Cerrar sesión');
+    navigate('/login');
   };
 
   return (
