@@ -1,87 +1,50 @@
-/* src/styles/home.css */
-.home-container {
+.Home_Contenedor {
+	padding: 20px;
+  }
+  
+  .Home_Header {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 20px;
-	background-color: #f4f4f4; /* Color de fondo gris claro */
-	min-height: 100vh;
-	position: relative;
-  }
-  
-  .welcome-section {
-	text-align: center;
-	margin-bottom: 30px;
-  }
-  
-  .welcome-title {
-	font-size: 2.5rem;
-	color: #1a237e; /* Azul oscuro */
-  }
-  
-  .search-section,
-  .post-section {
-	width: 100%;
-	max-width: 800px;
-	background: white;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-	padding: 20px;
-	margin-bottom: 30px;
-  }
-  
-  .search-section {
-	margin-top: 20px;
-  }
-  
-  .search-field {
+	justify-content: flex-end;
 	margin-bottom: 20px;
   }
   
-  .post-item {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid #ddd;
-	padding: 15px 0;
-  }
-  
-  .post-content {
-	flex: 1;
-	margin-left: 15px;
-  }
-  
-  .post-author {
-	display: flex;
-	align-items: center;
-	font-size: 0.9rem;
-	color: #555;
-  }
-  
-  .post-author img {
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	margin-right: 10px;
-  }
-  
-  .post-actions {
-	display: flex;
-	align-items: center;
-  }
-  
-  .like-button {
+  .Home_Perfil,
+  .Home_Logout {
 	margin-left: 10px;
-	cursor: pointer;
   }
   
-  .profile-link {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	color: #1a237e; /* Azul oscuro */
-	font-size: 1rem;
-	text-decoration: none;
-	font-weight: bold;
+  .Home_Logout {
+	background-color: #ff4d4d; /* Color rojo para indicar cerrar sesión */
+	color: white;
   }
+  
+  .Home_Busqueda {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Home_Post {
+	background-color: white;
+	padding: 15px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Home_Post_Header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+  }
+  
+  .Home_Post_Header img {
+	border-radius: 50%;
+  }
+  
+  .Home_Post div {
+	margin-bottom: 10px;
+  }
+  
   
