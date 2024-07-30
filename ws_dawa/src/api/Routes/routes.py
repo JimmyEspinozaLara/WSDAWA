@@ -15,8 +15,3 @@ def load_routes(api):
     api.add_resource(PublicacionService, '/security/publicacion')
     # Método para listar las publicaciones
     api.add_resource(PublicacionListService, '/publicaciones/list')
-
-    # Verificar las rutas registradas
-    print("Rutas registradas:")
-    for rule in api.app.url_map.iter_rules():
-        print(rule)
