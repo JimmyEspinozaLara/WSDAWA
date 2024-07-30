@@ -11,10 +11,13 @@ function Login() {
 
   const manejadorLogin = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:3200/usuario/login", {
+      const response = await fetch("http://127.0.0.1:3200/security/login", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({email, password})
+        body: JSON.stringify({
+          login_user: email,
+          login_password: password
+        })
       });
       const data = await response.json();
       console.log(data);
