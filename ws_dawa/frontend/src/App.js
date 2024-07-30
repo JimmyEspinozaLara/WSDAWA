@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './components/Home';
-import Profile from './components/Profile'; // Asegúrate de que el componente Profile esté en esta ruta
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -19,3 +19,5 @@ function App() {
     </Router>
   );
 }
+
+export default App;
