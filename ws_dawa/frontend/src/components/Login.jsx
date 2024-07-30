@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, TextField, Alert, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import '../styles/Login.css';  // Asegúrate de que la ruta sea correcta
+import '../styles/Login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -27,7 +27,7 @@ function Login() {
 
       if (data.status_code === 200) {
         setToken(data.data)
-        navigate('/home'); // Redirige a la página de inicio si el login es exitoso
+        navigate('/home'); //redirige a la pagina home
       } else {
         setAlerta({ codigo: data.status_code });
       }
@@ -37,7 +37,7 @@ function Login() {
   };
 
   const irRegistro = () => {
-    navigate('/register'); // Redirige a la página de registro
+    navigate('/register'); // redirige a la página registro
   };
 
   return (
