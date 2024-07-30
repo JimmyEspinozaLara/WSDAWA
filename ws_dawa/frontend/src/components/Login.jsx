@@ -27,7 +27,7 @@ function Login() {
 
       if (data.status_code === 200) {
         setToken(data.data)
-        navigate('/home'); //redirige a la pagina home
+        navigate('/home');
       } else {
         setAlerta({ codigo: data.status_code });
       }
@@ -38,7 +38,7 @@ function Login() {
   };
 
   const irRegistro = () => {
-    navigate('/register'); // redirige a la página registro
+    navigate('/register');
   };
 
   const renderAlerta = () => {
@@ -75,8 +75,8 @@ function Login() {
         <Typography variant="h6">Iniciar Sesión</Typography>
         <TextField
           required
-          id="Correo"
-          label="Correo"
+          id="user"
+          label="user"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           fullWidth
