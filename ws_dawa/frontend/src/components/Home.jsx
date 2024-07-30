@@ -66,7 +66,7 @@ const Home = () => {
       
       <div className="welcome-section">
         <Typography variant="h2" className="welcome-title">
-          Red Social de la UG
+          Red Social UG
         </Typography>
       </div>
       
