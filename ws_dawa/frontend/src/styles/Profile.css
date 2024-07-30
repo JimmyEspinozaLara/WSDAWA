@@ -1,0 +1,34 @@
+.profile-container {
+	padding: 20px;
+	background-color: #c7d2f1; 
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .profile-card {
+	padding: 20px;
+	width: 100%;
+	max-width: 600px;
+	background-color: #ffffff;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+  }
+  
+  .profile-photo {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .profile-name {
+	margin-bottom: 20px;
+  }
+  
+  .logout-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+  }
+  
