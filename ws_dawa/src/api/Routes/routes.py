@@ -1,5 +1,5 @@
 from ..Services.login_service import LoginService
-from ..Services.registro_service import RegistroService  # Importar RegistroService
+from ..Services.registro_service import RegistroService
 from ..Services.user_service import UserService
 from ..Services.publicaciones_services import PublicacionService
 from ..Services.posts_service import PublicacionListService
