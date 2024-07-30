@@ -33,11 +33,37 @@ function Login() {
       }
     } catch (error) {
       console.error('Login failed:', error);
+      setAlerta({ codigo: 500 });
     }
   };
 
   const irRegistro = () => {
     navigate('/register'); // redirige a la página registro
+  };
+
+  const renderAlerta = () => {
+    if (!alerta) return null;
+
+    let mensaje;
+    switch (alerta.codigo) {
+      case 404:
+        mensaje = "Usuario no Encontrado";
+        break;
+      case 401:
+        mensaje = "Contraseña Incorrecta";
+        break;
+      case 500:
+        mensaje = "Error en el servidor, intente nuevamente";
+        break;
+      default:
+        mensaje = "Ocurrió un error desconocido";
+    }
+
+    return (
+      <Alert severity="error" style={{ marginTop: 20 }}>
+        {mensaje}
+      </Alert>
+    );
   };
 
   return (
@@ -75,21 +101,7 @@ function Login() {
           </Button>
         </div>
 
-        <div className="Alerta">
-          {alerta && alerta.codigo === 404 ? (
-            <Alert severity="error" style={{ marginTop: 20 }}>
-              Usuario no Encontrado
-            </Alert>
-          ) : null}
-        </div>
-
-        <div className="Alerta">
-          {alerta && alerta.codigo === 401 ? (
-            <Alert severity="error" style={{ marginTop: 20 }}>
-              Contraseña Incorrecta
-            </Alert>
-          ) : null}
-        </div>
+        {renderAlerta()}
       </div>
     </div>
   );
