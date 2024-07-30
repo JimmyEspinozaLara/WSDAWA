@@ -6,6 +6,7 @@ import '../styles/Login.css';  // Asegúrate de que la ruta sea correcta
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const[token, setToken] = useState('');
   const [alerta, setAlerta] = useState(null);
   const navigate = useNavigate();
 
@@ -18,11 +19,14 @@ function Login() {
           login_user: email,
           login_password: password
         })
+        
       });
       const data = await response.json();
+      
       console.log(data);
 
       if (data.status_code === 200) {
+        setToken(data.data)
         navigate('/home'); // Redirige a la página de inicio si el login es exitoso
       } else {
         setAlerta({ codigo: data.status_code });
