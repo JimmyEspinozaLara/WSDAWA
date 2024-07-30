@@ -1,7 +1,8 @@
-// src/components/home.jsx
+// src/components/Home.jsx
 import React, { useState } from 'react';
 import { TextField, Button, Typography, Avatar } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -13,6 +14,8 @@ const Home = () => {
   ]);
   const [likes, setLikes] = useState({});
   const [nuevoPost, setNuevoPost] = useState({ titulo: '', contenido: '' });
+
+  const navigate = useNavigate();
 
   const handleBusqueda = (e) => setBusqueda(e.target.value);
   const handleComentario = (e) => setComentario(e.target.value);
@@ -43,8 +46,10 @@ const Home = () => {
   };
 
   const handleCerrarSesion = () => {
-    // Lógica para cerrar sesión
+    // Lógica para cerrar sesión (por ejemplo, eliminar el token de autenticación)
     console.log('Cerrar sesión');
+    // Redirigir al login
+    navigate('/login');
   };
 
   return (
@@ -153,4 +158,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
 
