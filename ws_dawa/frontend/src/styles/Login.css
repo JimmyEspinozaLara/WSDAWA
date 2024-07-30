@@ -1,0 +1,30 @@
+.Login_Contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #C5CAE9;
+}
+
+.Login_Formulario {
+    background-color: white;
+    padding: 30px;
+    margin-top: -20vh;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4%;
+}
+
+.Login_Formulario h2 {
+    margin-bottom: 20px;
+    color: #1A237E;
+}
+
+.Login_Boton {
+    margin-top: 20px;
+    color: white;
+}
+
+.Alerta{
+    width: 100%;
+    margin-top: 20px;
+}

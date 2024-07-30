@@ -1,0 +1,27 @@
+.Tabla_Usuarios{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.Titulo {
+    color: #1A237E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Tabla_Usuarios .MuiTableHead-root {
+    background-color: #1A237E;
+}
+
+.Tabla_Usuarios .MuiTableHead-root .MuiTableCell-root {
+    color: white;
+    font-weight: bold;
+}
+
+.Tabla_Usuarios .MuiTableBody-root .MuiTableCell-root {
+    background-color: white;
+    color: black;
+}
