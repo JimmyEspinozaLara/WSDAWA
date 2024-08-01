@@ -5,7 +5,7 @@ services:
       image: 'dawa_ws_image:latest'
       restart: always
       ports:
-        - '5000:5000'
+        - '1008:1008'
       networks:
         - web
       volumes:
@@ -16,7 +16,7 @@ services:
       image: 'node:latest'
       working_dir: /app
       volumes:
-        - D:\VSCode\front_taller_u3s11:/app
+        - D:\ProyectoPyton\WSDAWA\ws_dawa\frontend:/app
       ports:
         - '3000:3000'
       networks:
