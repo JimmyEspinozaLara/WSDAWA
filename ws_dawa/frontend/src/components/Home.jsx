@@ -46,9 +46,7 @@ const Home = () => {
   };
 
   const handleCerrarSesion = () => {
-    // Lógica para cerrar sesión (por ejemplo, eliminar el token de autenticación)
     console.log('Cerrar sesión');
-    // Redirigir al login
     navigate('/login');
   };
 

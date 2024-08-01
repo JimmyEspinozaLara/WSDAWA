@@ -5,7 +5,7 @@ import '../styles/Profile.css';
 const Profile = () => {
   const user = {
     nombre: 'Juan Pérez',
-    foto: 'https://via.placeholder.com/100', // URL de la foto de perfil
+    foto: 'https://via.placeholder.com/100',
     fechaNacimiento: '17/05/1998',
     facultad: 'Ciencias Matemáticas y Físicas',
     carrera: 'Ingeniería en Software',
